@@ -51,6 +51,7 @@ main {
 #title {
   font-size: 30px;
   display: flex;
+  margin-top: 50px;
 }
 
 /* form */
@@ -73,7 +74,7 @@ main {
 
 /* second section */
 #secondBox {
-  width: 675px;
+  width: 660px;
   height: 200px;
   margin-top: 25px;
   display: flex;
@@ -168,6 +169,11 @@ main {
   border: none;
   border-radius: 5px;
   margin-top: 10px;
+}
+
+#leaveYourComment {
+  display: flex;
+  flex-direction: column;
 }
 
 input {
