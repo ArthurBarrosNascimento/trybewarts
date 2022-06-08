@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Joan&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Trybewarts</title>
 </head>
@@ -15,11 +15,54 @@
       <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg">
       <h1 id="trybewarts-header-title">Trybewarts</h1>
       <form class="trybewarts-login" method="get" >
-        <input type="email" name="email" id="email" placeholder="Email" required>
-        <input type="password" name="password" id="password" placeholder="Senha" required>
+        <input type="email" name="email" id="email" class="styleInputHeader" placeholder="Email" required>
+        <input type="password" name="password" id="password" class="styleInputHeader" placeholder="Senha" required>
         <button id="btn-login" type="submit">Entrar</button>
       </form>
     </header>
+    <div  id="divTitle">
+        <h1 id="title">Formulario de Avaliação</h1>
+    </div>
+    <main>
+        <form id="evaluation-form" method="get">
+            <!-- first parst of the form -->
+            <div id="firstBox">
+                <input id="input-name" class="styleNameLastname" type="text" placeholder="Nome">
+                <input id="input-lastname" class="styleNameLastname" type="text" placeholder="Sobrenome">
+                <input id="input-email"  type="email" placeholder="Email">
+                <label for="house">Casa:</label>
+                <select name="" id="house" class="space"> 
+                    <option id="gitnoria-house" value="Gitnória">Gitnória</option>
+                    <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+                    <option id="corvinode-house" value="Corvinode">Corvinode</option>
+                    <option id="pytherina-house" value="Pytherina">Pytherina</option>
+                </select>
+            </div>
+            <!-- linha -->
+            <div class="line"></div>
+
+            <div id="secondBox">
+                <div id="choiceFamily">
+                    <label for="" id="label-family">Qual sua família?</label>
+                    <input class="space" type="radio" name="family" value="Frontend">Familia Frontend
+                    <input class="space" type="radio" name="family" value="Backend">Familia Backend
+                    <input class="space" type="radio" name="family" value="FullStack">Familia FullStack
+                </div>
+                <div id="choiceContent">
+                    <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+                    <input class="subject space" type="checkbox" value="HoFs">HoFs
+                    <input class="subject space" type="checkbox" value="Jest">Jest
+                    <input class="subject space" type="checkbox" value="Promises">Promises
+                    <input class="subject space" type="checkbox" value="React">React
+                    <input class="subject space" type="checkbox" value="SQL">SQL
+                    <input class="subject space" type="checkbox" value="Python">
+                </div>
+            </div>
+        </form>
+        <!-- img -->
+        <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="">
+    </main>
+
     <footer>
       <span>Direitos reservados à Trybewarts©</span>
     </footer>
