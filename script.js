@@ -15,4 +15,21 @@ function doOnload() {
   loginForms();
 }
 
+function availableBtn() {
+  const checkBox = document.querySelector('#agreement');
+  const btn = document.querySelector('#submit-btn');
+  btn.disabled = true;
+  checkBox.addEventListener('click', () => {
+    if (checkBox.checked) {
+      btn.disabled = false;
+    }
+    else {
+      btn.disabled = true;
+    }
+  });
+
+}
+
+availableBtn();
+
 window.onload = doOnload;
