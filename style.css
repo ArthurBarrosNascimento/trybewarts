@@ -176,6 +176,12 @@ main {
   flex-direction: column;
 }
 
+#dataValidation {
+  display: flex;
+  margin-top: 5px;
+  align-items: center;
+}
+
 input {
   padding-left: 15px;
 
