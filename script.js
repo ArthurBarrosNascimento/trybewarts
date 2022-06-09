@@ -19,15 +19,16 @@ function availableBtn() {
   const checkBox = document.querySelector('#agreement');
   const btn = document.querySelector('#submit-btn');
   btn.disabled = true;
+  btn.style.color = 'black';
   checkBox.addEventListener('click', () => {
     if (checkBox.checked) {
       btn.disabled = false;
-    }
-    else {
+      btn.style.color = 'white';
+    } else {
       btn.disabled = true;
+      btn.style.color = 'black';
     }
   });
-
 }
 
 availableBtn();
